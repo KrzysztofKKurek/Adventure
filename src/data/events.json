@@ -1,0 +1,97 @@
+[
+  {
+    "id": "event-blood-altar",
+    "name": "Ołtarz Krwi",
+    "description": "Zajmujący środek komnaty starożytny ołtarz pokryty jest rzeźbieniami, ale krew wypełniająca jego żłobienia wydaje się niepokojąco świeża. Głos w głowie szepcze o potędze, żądając ofiary.",
+    "choices": [
+      {
+        "label": "Poświęć krew (Strać 20 HP, otrzymasz losowy Relikt)",
+        "mechanic_effect": "lose-hp:20;gain-relic:random"
+      },
+      {
+        "label": "Poświęć wspomnienia (Usuń 1 kartę z talii)",
+        "mechanic_effect": "remove-card:manual"
+      },
+      {
+        "label": "Odejdź",
+        "mechanic_effect": "leave"
+      }
+    ]
+  },
+  {
+    "id": "event-trapped-spirit",
+    "name": "Uwięziony Duch",
+    "description": "Z rozbitej wazy unosi się splątana mgła – to duch dawnego Łowcy Podziemi. Zjawa błaga o ułamek twojej witalności, obiecując podzielić się zapomnianymi technikami walki.",
+    "choices": [
+      {
+        "label": "Zgódź się na układ (Ulepsz 2 karty, otrzymasz Klątwę)",
+        "mechanic_effect": "upgrade-card:2;add-card:curse-paralyzing-fear"
+      },
+      {
+        "label": "Uwolnij go łamiąc pieczęcie (Usuń 1 kartę Odpoczynkową 🔥 z talii, zyskaj Rzadką Kartę Umiejętności)",
+        "mechanic_effect": "remove-card:type-rest;add-card:rare-skill"
+      },
+      {
+        "label": "Zostaw duszę jej losowi",
+        "mechanic_effect": "leave"
+      }
+    ]
+  },
+  {
+    "id": "event-fiendish-bargain",
+    "name": "Czarci Targ",
+    "description": "Z cienia wyłania się żółtooka, zgarbiona postać. \"Zło nie potrzebuje złota... handlujemy tu życiem i żelazem - mówi chrapliwym głosem - Wybieraj mądrze.\"",
+    "choices": [
+      {
+        "label": "Pakt Wytrwałości (Wylecz się do 100% HP, trać 1 Relikt)",
+        "mechanic_effect": "heal:100-percent;lose-relic:manual"
+      },
+      {
+        "label": "Pakt Siły (Tracisz na stałe 15 Max HP, otrzymujesz losową Rzadką Kartę Atakującą)",
+        "mechanic_effect": "lose-max-hp:15;add-card:rare-attack"
+      },
+      {
+        "label": "Pakt Zignorowania",
+        "mechanic_effect": "leave"
+      }
+    ]
+  },
+  {
+    "id": "event-soul-smith",
+    "name": "Eteryczny Kowal",
+    "description": "Trafiasz na pajęczynową zjawę starego kowala, uderzającego upiornym młotem w kowadło bez fizycznego dźwięku. Kowal niezdarnie wskazuje byś rzucił na kowadło swój ekwipunek.",
+    "choices": [
+      {
+        "label": "Przekuj broń bez wahania (Ulepsz 1 wybraną kartę, Otrzymaj 7 obrażeń)",
+        "mechanic_effect": "upgrade-card:1;take-damage:7"
+      },
+      {
+        "label": "Stop słabe żelastwo na kowadle (Usuń 2 Zwykłe karty z talii, zyskaj 1 losową Zwykłą kartę od kowala)",
+        "mechanic_effect": "remove-card:2-common;add-card:random-common"
+      },
+      {
+        "label": "Wycofaj się",
+        "mechanic_effect": "leave"
+      }
+    ]
+  },
+  {
+    "id": "event-bioluminescent-spores",
+    "name": "Grzybnia Zmory",
+    "description": "Całe ściany porośnięte są wielkimi, pulsującymi grzybami. Mleczne światło i zapach obiecują uzdrowienie, ale w tych ruinach większość tworów natury wciąż pozostaje mordercza.",
+    "choices": [
+      {
+        "label": "Zjedz największy grzyb (50% szans: ulecz 35% Max HP LUB 50% szans: strać 15 HP z powodu zatrucia)",
+        "mechanic_effect": "random:heal-35-percent,take-damage-15"
+      },
+      {
+        "label": "Ostrożnie wydobądź gęste toksyny (Zyskasz jednorazową kartę 💀 Toksyczny Dym)",
+        "mechanic_effect": "add-card:toxic-smoke"
+      },
+      {
+        "label": "Zasłoń usta i oddal się bez gwałtownych ruchów (Otrzymaj 2 obrażenia od małych oparów)",
+        "mechanic_effect": "take-damage:2"
+      }
+    ]
+  }
+]
